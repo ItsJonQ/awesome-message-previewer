@@ -1,0 +1,14 @@
+// AMP :: Viewport
+
+.amp-viewport {
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  min-height: 300px;
+  min-width: 300px;
+}
+
+.amp-viewport__header {
+  background-color: #eee;
+  min-height: 28px;
+  @include transition(all 0.2s ease);
+}
