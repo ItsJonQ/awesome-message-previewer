@@ -1,3 +1,7 @@
 // AMP :: Variables :: Shadow
 
-$shadow-1:  0px 1px 1px rgba(black, 0.08);
+// Inner Shaodws
+$shadow-highlight:  0 1px 0 rgba(white, 0.6) inset;
+
+// Drop Shadows
+$shadow-1:  0 1px 1px rgba(black, 0.08);
