@@ -1,1 +1,10 @@
+// Vendor
 @import "bourbon/dist/bourbon";
+
+// Variables
+@import "variables/color";
+@import "variables/border";
+@import "variables/shadow";
+
+// Components
+@import "components/viewport";
