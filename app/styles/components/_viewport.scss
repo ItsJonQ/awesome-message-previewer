@@ -10,34 +10,38 @@
 
 .amp-viewport__header {
   @include border-top-radius($border-radius);
-  background-color: #eee;
+  background-color: $gray-lighter;
   border-bottom: $border;
   box-shadow: $shadow-highlight;
-  height: 30px;
+  height: $viewport-header-height;
   position: relative;
   overflow: hidden;
 }
 
 .amp-viewport__header__addon {
   @include transform(translate3d(0, -50%, 0));
-  background-color: #bbb;
+  background-color: $color-addon;
   border-radius: 50%;
-  box-shadow: 15px 0px 0px #bbb, 30px 0px 0px #bbb;
-  height: 10px;
-  margin-left: 15px;
+  box-shadow: 15px 0px 0px $color-addon, 30px 0px 0px $color-addon;
+  height: $viewport-header-addon-size;
+  margin-left: ($viewport-header-height / 2);
   position: absolute;
   top: 50%;
-  width: 10px;
+  width: $viewport-header-addon-size;
   z-index: 2;
 }
 
 .amp-viewport__header__speaker {
   @include transform(translate3d(-50%, -50%, 0));
-  background-color: #bbb;
+  background-color: $color-addon;
   border-radius: 8px;
   height: 8px;
   left: 50%;
   position: absolute;
   top: 50%;
   width: 60px;
+}
+
+.amp-viewport__footer {
+  background-color: $gray-lighter;
 }
