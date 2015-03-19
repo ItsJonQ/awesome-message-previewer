@@ -62,10 +62,10 @@
       background-color: $color-addon;
       border-radius: 50%;
       bottom: -50%;
-      height: 35px;
+      height: $viewport-footer-addon-size;
       left: 50%;
       position: absolute;
-      width: 35px;
+      width: $viewport-footer-addon-size;
     }
   }
 }

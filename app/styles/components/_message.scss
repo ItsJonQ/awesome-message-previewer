@@ -5,13 +5,13 @@
 
   &__header {
     border-bottom: $border;
-    padding: 15px 0;
+    padding: $message-header-padding 0;
   }
 
   &__details {
     list-style: none;
     margin: 0;
-    padding: 0 10px;
+    padding: 0 $message-detail-side-padding;
 
     li {
       @include clearfix;
@@ -20,7 +20,7 @@
 
   &__detail {
     @include transition(none);
-    font-size: 0.8rem;
+    font-size: $message-detail-font-size;
     margin: 0;
     padding: 5px 0;
 
@@ -37,17 +37,17 @@
       text-align: right;
       text-overflow: ellipsis;
       white-space: nowrap;
-      width: 100px;
+      width: $message-detail-dt-offset;
     }
 
     dd {
       color: darken($color-text-light, 6);
-      margin-left: 120px;
+      margin-left: $message-detail-dd-offset;
     }
   }
 
   &__body {
-    height: 520px;
+    height: $message-body-height;
     position: relative;
   }
 
