@@ -22,11 +22,18 @@
 
       <div class="main-container">
         <br><br>
-        <button id="toggle-viewport">Toggle Viewport</button>
+        <div class="clearfix">
+          <div class="pull-left">
+            <button id="toggle-attributes">Merge Customer Info</button>
+          </div>
+          <div class="pull-right">
+            <button id="toggle-viewport">Toggle Viewport</button>
+          </div>
+        </div>
         <br><br>
 
 
-        <div class="amp-viewport amp-viewport--mobile" data-js-toggle="viewport">
+        <div class="amp-viewport" data-js-toggle="viewport">
           <div class="amp-viewport__header">
             <div class="amp-viewport__header__addon"></div>
             <div class="amp-viewport__header__speaker"></div>
@@ -42,7 +49,7 @@
                         To
                       </dt>
                       <dd>
-                        Me!
+                        <span class="js-customer-name">{{customer.name}}</span> &lt; <strong class="js-customer-email">{{customer.email}}</strong> &gt;
                       </dd>
                     </dl>
                   </li>
@@ -62,7 +69,7 @@
                         Subject
                       </dt>
                       <dd>
-                        <strong>Be sure to check out Ami's awesome bake sale!</strong>
+                        <strong>Heya <span class="js-customer-name">{{customer.name}}</span>, be sure to check out Ami's awesome bake sale!</strong>
                       </dd>
                     </dl>
                   </li>
