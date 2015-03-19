@@ -9,6 +9,11 @@
   min-height: $viewport-size;
   min-width: $viewport-size;
   overflow: hidden;
+  width: 100%;
+
+  * {
+    @include transition(all 0.4s ease);
+  }
 
   &__header {
     background-color: $gray-lighter;
@@ -57,10 +62,10 @@
       background-color: $color-addon;
       border-radius: 50%;
       bottom: -50%;
-      height: 40px;
+      height: 35px;
       left: 50%;
       position: absolute;
-      width: 40px;
+      width: 35px;
     }
   }
 }

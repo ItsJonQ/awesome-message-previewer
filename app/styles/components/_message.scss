@@ -1,6 +1,6 @@
 // AMP :: Components :: Message
 
-.amp-message {
+.amp-viewport .amp-message {
   background-color: $white;
 
   &__header {
@@ -11,20 +11,26 @@
   &__details {
     list-style: none;
     margin: 0;
+    padding: 0 10px;
 
     li {
       @include clearfix;
-      padding: 5px 0;
     }
   }
 
   &__detail {
+    @include transition(none);
     font-size: 0.8rem;
     margin: 0;
+    padding: 5px 0;
+
+    * {
+      @include transition(none);
+    }
 
     dt {
       clear: left;
-      color: $color-text-light;
+      color: lighten($color-text-light, 24);
       float: left;
       font-weight: bold;
       overflow: hidden;
