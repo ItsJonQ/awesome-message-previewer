@@ -3,3 +3,57 @@
 .amp-message__header {
 
 }
+
+.amp-message__details {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    @include clearfix;
+    border-bottom: $border;
+  }
+}
+
+.amp-message__detail {
+  dt {
+    float: left;
+    font-weight: bold;
+    clear: left;
+    overflow: hidden;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100px;
+  }
+
+  dl {
+    margin-left: 120px;
+  }
+}
+
+.amp-message__body {
+  min-height: 300px;
+  position: relative;
+}
+
+.amp-message__content {
+  background: #fff;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  iframe {
+    border: none;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
