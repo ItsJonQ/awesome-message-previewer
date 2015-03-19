@@ -21,8 +21,9 @@
   &__detail {
     @include transition(none);
     font-size: $message-detail-font-size;
+    line-height: $message-detail-line-height;
     margin: 0;
-    padding: 5px 0;
+    padding: 2px 0;
 
     * {
       @include transition(none);

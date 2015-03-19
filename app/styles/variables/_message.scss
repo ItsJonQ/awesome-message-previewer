@@ -3,6 +3,7 @@
 $message-header-padding:        15px;
 $message-detail-side-padding:   10px;
 $message-detail-font-size:      0.8rem;
+$message-detail-line-height:    1.5;
 
 $message-detail-dt-offset:      100px;
 $message-detail-dd-offset:      ($message-detail-dt-offset + 20);
@@ -10,6 +11,6 @@ $message-detail-dd-offset:      ($message-detail-dt-offset + 20);
 $message-body-height:           520px;
 
 
-$mobile-message-detail-dt-offset:       60px;
+$mobile-message-detail-dt-offset:       40px;
 $mobile-message-detail-dd-offset:       ($mobile-message-detail-dt-offset + 20);
 $mobile-message-body-height:            420px;
