@@ -1,25 +1,30 @@
 // AMP :: Components :: Message
 
 .amp-message__header {
-
+  border-bottom: $border;
+  padding: 15px 0;
 }
 
 .amp-message__details {
   list-style: none;
   margin: 0;
-  padding: 0;
 
   li {
     @include clearfix;
-    border-bottom: $border;
+    // border-bottom: $border;
+    padding: 5px 0;
   }
 }
 
 .amp-message__detail {
+  font-size: 0.8rem;
+  margin: 0;
+
   dt {
+    clear: left;
+    color: $color-text-light;
     float: left;
     font-weight: bold;
-    clear: left;
     overflow: hidden;
     text-align: right;
     text-overflow: ellipsis;
@@ -27,7 +32,8 @@
     width: 100px;
   }
 
-  dl {
+  dd {
+    color: darken($color-text-light, 6);
     margin-left: 120px;
   }
 }

@@ -4,12 +4,12 @@
   border: $border;
   border-radius: $border-radius;
   box-shadow: $shadow-1;
-  min-height: 300px;
-  min-width: 300px;
+  min-height: $viewport-size;
+  min-width: $viewport-size;
+  overflow: hidden;
 }
 
 .amp-viewport__header {
-  @include border-top-radius($border-radius);
   background-color: $gray-lighter;
   border-bottom: $border;
   box-shadow: $shadow-highlight;
@@ -22,7 +22,7 @@
   @include transform(translate3d(0, -50%, 0));
   background-color: $color-addon;
   border-radius: 50%;
-  box-shadow: 15px 0px 0px $color-addon, 30px 0px 0px $color-addon;
+  box-shadow: ($viewport-header-height / 2) 0px 0px $color-addon, $viewport-header-height 0px 0px $color-addon;
   height: $viewport-header-addon-size;
   margin-left: ($viewport-header-height / 2);
   position: absolute;
@@ -34,12 +34,12 @@
 .amp-viewport__header__speaker {
   @include transform(translate3d(-50%, -50%, 0));
   background-color: $color-addon;
-  border-radius: 8px;
-  height: 8px;
+  border-radius: $viewport-header-speaker-h;
+  height: $viewport-header-speaker-h;
   left: 50%;
   position: absolute;
   top: 50%;
-  width: 60px;
+  width: $viewport-header-speaker-w;
 }
 
 .amp-viewport__footer {

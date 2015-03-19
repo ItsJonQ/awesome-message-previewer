@@ -1,5 +1,6 @@
 // Vendor
 @import "bourbon/dist/bourbon";
+@import "vendor/normalize";
 
 // Variables
 @import "variables/color";
@@ -8,5 +9,6 @@
 @import "variables/viewport";
 
 // Components
+@import "components/scaffolding";
 @import "components/message";
 @import "components/viewport";
