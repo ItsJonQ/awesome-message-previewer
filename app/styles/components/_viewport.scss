@@ -1,6 +1,7 @@
 // AMP :: Components :: Viewport
 
 .amp-viewport {
+  @include transition(all 0.2s ease);
   border: $border;
   border-radius: $border-radius;
   box-shadow: $shadow-1;
@@ -37,13 +38,13 @@
     }
 
     &__speaker {
-      @include transform(translate3d(-50%, -50%, 0));
+      @include transform(translate3d(-50%, -1050%, 0));
       background-color: $color-addon;
       border-radius: $viewport-header-speaker-h;
       height: $viewport-header-speaker-h;
       left: 50%;
       position: absolute;
-      top: -50%;
+      top: 50%;
       width: $viewport-header-speaker-w;
     }
   }
@@ -55,13 +56,14 @@
   &__footer {
     background-color: $gray-lighter;
     position: relative;
+    height: 0;
     overflow: hidden;
 
     &__addon {
-      @include transform(translate3d(-50%, 50%, 0));
+      @include transform(translate3d(-50%, 1050%, 0));
       background-color: $color-addon;
       border-radius: 50%;
-      bottom: -50%;
+      bottom: 50%;
       height: $viewport-footer-addon-size;
       left: 50%;
       position: absolute;

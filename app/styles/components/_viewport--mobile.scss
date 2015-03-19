@@ -19,7 +19,7 @@
     }
 
     &__speaker {
-      top: 50%;
+      @include transform(translate3d(-50%, -50%, 0));
     }
   }
 
@@ -28,7 +28,7 @@
   }
 
   .amp-viewport__footer__addon {
-    bottom: 50%;
+    @include transform(translate3d(-50%, 50%, 0));
   }
 
   .amp-message {
