@@ -8,18 +8,21 @@
   .amp-viewport__footer
   {
     border: none;
-    height: $viewport-mobile-header-size;
+    height: $viewport-tablet-header-height;
   }
 
   .amp-viewport__header {
     &__addon {
-      @include transform(translate3d(-60px, -50%, 0));
+      @include transform(translate3d(-50%, -50%, 0));
       box-shadow: none;
       left: 50%;
+      margin-left: 0;
     }
 
     &__speaker {
       @include transform(translate3d(-50%, -50%, 0));
+      width: $viewport-tablet-header-speaker-w;
+      top: 0;
     }
   }
 
@@ -29,7 +32,9 @@
 
   .amp-viewport__footer__addon {
     @include transform(translate3d(-50%, 50%, 0));
+    width: $viewport-tablet-header-speaker-w;
+    bottom: 0;
   }
 
-  @include message--mobile();
+  @include message--mobile($tablet-message-body-height);
 }

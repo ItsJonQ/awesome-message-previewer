@@ -1,6 +1,6 @@
 // AMP :: Mixins :: Viewport (Tablet/Mobile)
 
-@mixin message--mobile() {
+@mixin message--mobile($body-height: $mobile-message-body-height) {
 
   .amp-message {
     border: $border;
@@ -39,7 +39,7 @@
     }
 
     &__body {
-      height: $mobile-message-body-height;
+      height: $body-height;
     }
   }
 

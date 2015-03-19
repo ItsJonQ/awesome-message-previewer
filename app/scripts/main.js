@@ -1,7 +1,9 @@
 (function($){ 'use strict';
 
   // Elements
-  var $toggleView = $('#toggle-viewport');
+  var $toggleViewDesktop = $('#toggle-viewport-desktop');
+  var $toggleViewTablet = $('#toggle-viewport-tablet');
+  var $toggleViewMobile = $('#toggle-viewport-mobile');
   var $toggleAttr = $('#toggle-attributes');
   var $viewport = $('[data-js-toggle="viewport"]');
 
@@ -63,8 +65,20 @@
 
 
   // Actions
-  $toggleView.on('click', function() {
-    $viewport.toggleClass('amp-viewport--tablet');
+  $toggleViewDesktop.on('click', function() {
+    $viewport.removeClass('amp-viewport--tablet amp-viewport--mobile');
+  });
+
+  $toggleViewTablet.on('click', function() {
+    $viewport
+      .removeClass('amp-viewport--mobile')
+      .addClass('amp-viewport--tablet');
+  });
+
+  $toggleViewMobile.on('click', function() {
+    $viewport
+      .removeClass('amp-viewport--tablet')
+      .addClass('amp-viewport--mobile');
   });
 
   $toggleAttr.on('click', function() {
