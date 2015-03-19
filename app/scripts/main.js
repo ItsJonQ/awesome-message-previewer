@@ -64,7 +64,7 @@
 
   // Actions
   $toggleView.on('click', function() {
-    $viewport.toggleClass('amp-viewport--mobile');
+    $viewport.toggleClass('amp-viewport--tablet');
   });
 
   $toggleAttr.on('click', function() {

@@ -1,0 +1,46 @@
+// AMP :: Mixins :: Viewport (Tablet/Mobile)
+
+@mixin message--mobile() {
+
+  .amp-message {
+    border: $border;
+
+    &__header {
+      padding: 10px 0;
+    }
+
+    &__detail {
+      dt {
+        width: $mobile-message-detail-dt-offset;
+      }
+
+      dd {
+        margin-left: $mobile-message-detail-dd-offset;
+      }
+
+      &--from {
+        display: none;
+      }
+
+      &--subject {
+        border-top: $border;
+        padding-bottom: 0;
+        padding-top: 10px;
+        margin-top: 5px;
+
+        dt {
+          display: none;
+        }
+
+        dd {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &__body {
+      height: $mobile-message-body-height;
+    }
+  }
+
+}
