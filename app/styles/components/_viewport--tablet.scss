@@ -1,0 +1,74 @@
+// AMP :: Components :: Viewport (Mobile)
+
+.amp-viewport--tablet {
+  border-radius: $viewport-mobile-border-radius;
+  width: $viewport-mobile-width;
+
+  .amp-viewport__header,
+  .amp-viewport__footer
+  {
+    border: none;
+    height: $viewport-mobile-header-size;
+  }
+
+  .amp-viewport__header {
+    &__addon {
+      @include transform(translate3d(-60px, -50%, 0));
+      box-shadow: none;
+      left: 50%;
+    }
+
+    &__speaker {
+      @include transform(translate3d(-50%, -50%, 0));
+    }
+  }
+
+  .amp-viewport__body {
+    padding: 0 8px;
+  }
+
+  .amp-viewport__footer__addon {
+    @include transform(translate3d(-50%, 50%, 0));
+  }
+
+  .amp-message {
+    border: $border;
+
+    &__header {
+      padding: 10px 0;
+    }
+
+    &__detail {
+      dt {
+        width: $mobile-message-detail-dt-offset;
+      }
+
+      dd {
+        margin-left: $mobile-message-detail-dd-offset;
+      }
+
+      &--from {
+        display: none;
+      }
+
+      &--subject {
+        border-top: $border;
+        padding-bottom: 0;
+        padding-top: 10px;
+        margin-top: 5px;
+
+        dt {
+          display: none;
+        }
+
+        dd {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &__body {
+      height: $mobile-message-body-height;
+    }
+  }
+}

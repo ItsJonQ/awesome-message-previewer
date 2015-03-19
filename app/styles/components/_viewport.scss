@@ -62,12 +62,12 @@
     &__addon {
       @include transform(translate3d(-50%, 1050%, 0));
       background-color: $color-addon;
-      border-radius: 50%;
+      border-radius: $viewport-footer-addon-h;
       bottom: 50%;
-      height: $viewport-footer-addon-size;
+      height: $viewport-footer-addon-h;
       left: 50%;
       position: absolute;
-      width: $viewport-footer-addon-size;
+      width: $viewport-footer-addon-w;
     }
   }
 }
