@@ -9,57 +9,58 @@
   min-height: $viewport-size;
   min-width: $viewport-size;
   overflow: hidden;
-}
 
-.amp-viewport__header {
-  background-color: $gray-lighter;
-  border-bottom: $border;
-  box-shadow: $shadow-highlight;
-  height: $viewport-header-height;
-  position: relative;
-  overflow: hidden;
-}
+  &__header {
+    background-color: $gray-lighter;
+    border-bottom: $border;
+    box-shadow: $shadow-highlight;
+    height: $viewport-header-height;
+    position: relative;
+    overflow: hidden;
 
-.amp-viewport__header__addon {
-  @include transform(translate3d(0, -50%, 0));
-  background-color: $color-addon;
-  border-radius: 50%;
-  box-shadow: ($viewport-header-height / 2) 0px 0px $color-addon, $viewport-header-height 0px 0px $color-addon;
-  height: $viewport-header-addon-size;
-  margin-left: ($viewport-header-height / 2);
-  position: absolute;
-  top: 50%;
-  width: $viewport-header-addon-size;
-  z-index: 2;
-}
+    &__addon {
+      @include transform(translate3d(0, -50%, 0));
+      background-color: $color-addon;
+      border-radius: 50%;
+      box-shadow: ($viewport-header-height / 2) 0px 0px $color-addon, $viewport-header-height 0px 0px $color-addon;
+      height: $viewport-header-addon-size;
+      margin-left: ($viewport-header-height / 2);
+      position: absolute;
+      top: 50%;
+      width: $viewport-header-addon-size;
+      z-index: 2;
+    }
 
-.amp-viewport__header__speaker {
-  @include transform(translate3d(-50%, -50%, 0));
-  background-color: $color-addon;
-  border-radius: $viewport-header-speaker-h;
-  height: $viewport-header-speaker-h;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  width: $viewport-header-speaker-w;
-}
+    &__speaker {
+      @include transform(translate3d(-50%, -50%, 0));
+      background-color: $color-addon;
+      border-radius: $viewport-header-speaker-h;
+      height: $viewport-header-speaker-h;
+      left: 50%;
+      position: absolute;
+      top: -50%;
+      width: $viewport-header-speaker-w;
+    }
+  }
 
-.amp-viewport__body {
-  background-color: $gray-lighter;
-}
+  &__body {
+    background-color: $gray-lighter;
+  }
 
-.amp-viewport__footer {
-  background-color: $gray-lighter;
-  position: relative;
-}
+  &__footer {
+    background-color: $gray-lighter;
+    position: relative;
+    overflow: hidden;
 
-.amp-viewport__footer__addon {
-  @include transform(translate3d(-50%, -50%, 0));
-  background-color: $color-addon;
-  border-radius: 50%;
-  height: 40px;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  width: 40px;
+    &__addon {
+      @include transform(translate3d(-50%, 50%, 0));
+      background-color: $color-addon;
+      border-radius: 50%;
+      bottom: -50%;
+      height: 40px;
+      left: 50%;
+      position: absolute;
+      width: 40px;
+    }
+  }
 }

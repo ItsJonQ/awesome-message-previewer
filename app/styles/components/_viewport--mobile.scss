@@ -6,25 +6,41 @@
 
   .amp-viewport__header,
   .amp-viewport__footer
-   {
+  {
     border: none;
     height: 70px;
   }
 
-  .amp-viewport__header__addon {
-    @include transform(translate3d(-60px, -50%, 0));
-    box-shadow: none;
-    left: 50%;
+  .amp-viewport__header {
+    &__addon {
+      @include transform(translate3d(-60px, -50%, 0));
+      box-shadow: none;
+      left: 50%;
+    }
+
+    &__speaker {
+      top: 50%;
+    }
   }
 
   .amp-viewport__body {
     background-color: #eee;
-    padding: 0 10px;
+    padding: 0 8px;
   }
 
+  .amp-viewport__footer__addon {
+    bottom: 50%;
+  }
 
+  .amp-message {
+    border: $border;
 
-  .amp-message__header {
-    display: none;
+    &__header {
+      display: none;
+    }
+
+    &__body {
+      height: 480px;
+    }
   }
 }
