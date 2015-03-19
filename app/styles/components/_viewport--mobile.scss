@@ -47,6 +47,10 @@
         margin-left: $mobile-message-detail-dd-offset;
       }
 
+      &--from {
+        display: none;
+      }
+
       &--subject {
         border-top: $border;
         padding-bottom: 0;
