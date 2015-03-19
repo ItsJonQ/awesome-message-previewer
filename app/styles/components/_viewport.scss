@@ -4,6 +4,8 @@
   border: $border;
   border-radius: $border-radius;
   box-shadow: $shadow-1;
+  margin-left: auto;
+  margin-right: auto;
   min-height: $viewport-size;
   min-width: $viewport-size;
   overflow: hidden;
@@ -42,6 +44,22 @@
   width: $viewport-header-speaker-w;
 }
 
+.amp-viewport__body {
+  background-color: $gray-lighter;
+}
+
 .amp-viewport__footer {
   background-color: $gray-lighter;
+  position: relative;
+}
+
+.amp-viewport__footer__addon {
+  @include transform(translate3d(-50%, -50%, 0));
+  background-color: $color-addon;
+  border-radius: 50%;
+  height: 40px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: 40px;
 }

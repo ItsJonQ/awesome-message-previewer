@@ -1,5 +1,9 @@
 // AMP :: Components :: Message
 
+.amp-message {
+  background-color: $white;
+}
+
 .amp-message__header {
   border-bottom: $border;
   padding: 15px 0;
@@ -39,7 +43,7 @@
 }
 
 .amp-message__body {
-  min-height: 300px;
+  height: 520px;
   position: relative;
 }
 
